@@ -11,6 +11,7 @@ use SupportBee\API\Labels as Labels;
 use SupportBee\API\Groups as Groups;
 use SupportBee\API\Snippets as Snippets;
 use SupportBee\API\WebHooks as WebHooks;
+use SupportBee\API\Reports as Reports;
 
 /**
  * Class SupportBee
@@ -177,5 +178,10 @@ class SupportBee
 	public function webhooks()
 	{
 		return WebHooks::webhooks();
+	}
+
+	public function reports()
+	{
+		return WebHooks::reports();
 	}
 }
