@@ -180,8 +180,19 @@ class SupportBee
 		return WebHooks::webhooks();
 	}
 
-	public function reports()
+	public function avg_first_response_time_report( $options = array() )
 	{
-		return WebHooks::reports();
+		return Reports::avg_first_response_time_report( $options );
 	}
+
+	public function tickets_count_report( $options = array() )
+	{
+		return Reports::tickets_count_report( $options );
+	}
+
+	public function replies_count_report( $options = array() )
+	{
+		return Reports::replies_count_report( $options );
+	}
+
 }

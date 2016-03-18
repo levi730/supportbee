@@ -18,7 +18,7 @@ class Reports extends API {
       'user', 'team', 'label', 'since', 'until'
     ) );
 
-    return self::process_request( 'reports/avg_first_response_time' );
+    return self::process_request( 'reports/avg_first_response_time', $options  );
   }
 
   public static function tickets_count_report( $options = array() )
@@ -27,7 +27,7 @@ class Reports extends API {
       'user', 'team', 'label', 'since', 'until'
     ) );
 
-    return self::process_request( 'reports/tickets_count' );
+    return self::process_request( 'reports/tickets_count', $options  );
   }
 
   public static function replies_count_report( $options = array() )
@@ -36,7 +36,7 @@ class Reports extends API {
       'user', 'team', 'label', 'since', 'until'
     ) );
 
-    return self::process_request( 'reports/replies_count' );
+    return self::process_request( 'reports/replies_count', $options  );
   }
 
 
